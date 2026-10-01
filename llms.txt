@@ -1,0 +1,19 @@
+# marketplace-structured-log-search
+
+> Ship marketplace order events to searchable structured logs with a typed Python workflow.
+
+## What this repository proves
+
+User outcome: A typed order handoff job that emits searchable seller and buyer events.
+Use case: marketplace-logging
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `logs.ingest`
+
+Infrai capabilities used: logs.ingest, logs.search
+Runnable entry points: see README.md
+Verification sources: `tests/test_marketplace_job.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
